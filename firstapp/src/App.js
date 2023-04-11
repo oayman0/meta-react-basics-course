@@ -14,10 +14,12 @@ import InputField from './components/InputField';
 import FormWithState from './components/FormWithState';
 import MealsApp from './components/MealsApp';
 import Essay from './components/contextApi/Essay';
+import ContextChallenge from './components/contextChallenge/App'
 
 function App() { 
   return (
   <div>
+    <ContextChallenge/> 
     <Essay/>
     <MealsApp/>
     <FormWithState/> 
