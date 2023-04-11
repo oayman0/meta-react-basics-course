@@ -13,11 +13,7 @@ const MealsList = () => {
         <div>
          
                 
-            for (var i=0; i<todaysMeals.length; i++){
-                    todaysMeals[i]
-                    }
-                
-            </h1>
+            
         </div>
 
     )

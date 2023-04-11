@@ -13,10 +13,12 @@ import RandomNum from './components/RandomNum';
 import InputField from './components/InputField';
 import FormWithState from './components/FormWithState';
 import MealsApp from './components/MealsApp';
+import Essay from './components/contextApi/Essay';
 
-function App() {
+function App() { 
   return (
   <div>
+    <Essay/>
     <MealsApp/>
     <FormWithState/> 
     <InputField/>
