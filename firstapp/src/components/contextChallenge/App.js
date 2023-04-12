@@ -2,6 +2,8 @@ import { useContext, useState } from 'react';
 import { places } from './data.js';
 import { getImageUrl } from './utils.js';
 import { MyContext } from './Context.js';
+import img1 from '../../assets/images/img1.jpg'
+import MyVideo from './video.js';
 
 export default function App() {
   const [isLarge, setIsLarge] = useState(false);
@@ -20,6 +22,19 @@ export default function App() {
       </label>
       <hr />
       {/* <List imageSize={imageSize} /> */}
+          <MyVideo/> 
+      <img
+      src={img1}
+      alt="Omar"
+      width="200px"
+      height="200px"
+    /> 
+      <img
+      src={require('../../assets/images/d1.jpg')}
+      alt="Omar"
+      width="100px"
+      height="100px"
+    />
      
       <List/>
       </MyContext.Provider>
@@ -54,11 +69,14 @@ function Place({ place}) {
 function PlaceImage({ place}) {
     const imageSize=useContext(MyContext);
   return (
+    <>
     <img
       src={getImageUrl(place)}
       alt={place.name}
       width={imageSize}
       height={imageSize}
     />
+   
+    </>
   );
 }
